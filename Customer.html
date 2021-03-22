@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customer</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+<!--    <script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name=-->
+<!--        "dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,-->
+<!--    void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.-->
+<!--    defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},-->
+<!--        get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.-->
+<!--        caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();-->
+<!--    </script>-->
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+</nav>
+<nav class="navbar navbar-expand-md navbar-dark bg-info sticky-top w-100">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dream X Craft</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Customer.html">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Item.html">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Orders.html">Orders</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                    </ul>
+                </li>
+
+                <!--                <li class="nav-item">-->
+                <!--                    <a class="nav-link text-dark" href="#"><i class="fas fa-user-plus"></i>Sign Up</a>-->
+                <!--                </li>-->
+            </ul>
+
+            <!--            <form class="d-flex">-->
+            <!--                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+            <!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
+            <!--            </form>-->
+
+        </div>
+    </div>
+</nav>
+<br>
+
+<div class="col-lg-11 mx-5" style="width: auto">
+    <div class="bg-light main-title mb-0">
+        <h2><i class="fas fa-shopping-cart"></i> Customer</h2>
+    </div>
+    <div class="jumbotron pt-4 ">
+    <div class="card">
+        <div class="card-header bg-success">Customer Search</div>
+        <div class="card-body">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Input Name/NIC">
+            </div>
+            <br>
+            <div class="form-group form-inline">
+                <button class="btn btn-success mb-2">Search</button>
+                &nbsp;&nbsp;&nbsp;
+                <select class="form-control mb-2">
+                    <option>Name</option>
+                    <option>NIC</option>
+                </select>
+            </div>
+        </div>
+        </div>
+
+<br>
+    <div class="form-action-buttons mx-auto">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add">Customer</button>
+            <button type="button" class="btn btn-danger" >Delete</button>
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+            <button type="button" class="btn btn-info">View</button>
+            <button type="button" class="btn btn-success">Clear</button>
+
+        </div>
+    </div>
+</div>
+</div>
+<!--new customer-->
+
+<!-- Modal for adding customers -->
+<div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Search Customer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="" placeholder="Enter Full Name">
+<!--                        <div id="name" class="form-text">We'll never share your email with anyone else.</div>-->
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="" placeholder="Enter Address">
+
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="" class="form-label">Telephone No</label>
+                        <input type="text" class="form-control" id="" placeholder="Enter Telephone No">
+                    </div>
+
+                    <div class="mb-3 ">
+                        <label for="" class="form-label">Salary</label>
+                        <input type="text" class="form-control" id="" placeholder="Enter Salary">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for editing customers -->
+<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Edit Customer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="" placeholder="Enter Full Name">
+                        <!--                        <div id="name" class="form-text">We'll never share your email with anyone else.</div>-->
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="" placeholder="Enter Address">
+
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="" class="form-label">Telephone No</label>
+                        <input type="text" class="form-control" id="" placeholder="Enter Telephone No">
+                    </div>
+
+                    <div class="mb-3 ">
+                        <label for="" class="form-label">Salary</label>
+                        <input type="text" class="form-control" id="" placeholder="Enter Salary">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<table class="table">
+    <thead>
+    <tr>
+
+        <th scope="col">Customer Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Telephone No</th>
+        <th scope="col">Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Kavishka Nipun</td>
+        <td>299/1 thalawila church,palakudawa</td>
+        <td>0767594530</td>
+        <td>500000</td>
+    </tr>
+    </tbody>
+</table>
+<footer class="sticky-footer">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto ">
+            <br><br><br>
+            <small class="text-muted">
+                <p class="copyright">Kavishka Nipun copyright 2021</p>
+
+            </small>
+        </div>
+    </div>
+</footer>
+<script src="assests/js/bootstrap.js"></script>
+</body>
+</html>
